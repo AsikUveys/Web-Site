@@ -1,0 +1,53 @@
+#boksor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  
+  .aciklama {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin-top: 4%;
+    width:500px;
+    margin-left:125% ;
+    padding: 10px;
+    border: 1px solid #ddd;
+    color:white;
+  }
+  
+  .resim{
+    width: 350px;
+    margin-left:300px ;
+  }
+  .resim:hover{
+    filter:drop-shadow(2px 2px 5px rgb(145, 145, 145));
+    /*box-shadow: 0px 0px 5px 1px rgb(145, 145, 145);*/
+  }
+
+#p_gizli{
+  display: none;
+}
+#box:hover + .aciklama #p_gizli {
+  display: block;
+}
+
+ #mtyson{
+    width: 370px;
+    padding: 40px;
+ }
+
+#gfor{
+    width: 290px;
+    /*filter:invert(1%) sepia(1%) saturate(1%) hue-rotate(184deg) brightness(85%) contrast(101%);*/
+}
+  
+#p_ozet{
+  font-size:19px;
+}

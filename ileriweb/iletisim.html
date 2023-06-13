@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark_mode.css">
+    <script src="js/darkmode.js"></script>
+    <link rel="icon" href="img/bxlogo.png" type="image/x-icon"/>
+    <meta name="keywords" content="Efsanelerin Hayatı, Boks, Boksör, Efsane  Boksörler, Muhammed Ali, Mike Tyson, George Foreman, Larry Holmes, Joe Fraizer">
+    <meta name="description" content="Efsanelerin hayatı resmi Web Sitesi">
+    <title>Efsanelerin Hayatı</title>
+    <style>
+      #main{
+        height: 800px;
+        border-color:black;
+        display: flex;
+        justify-content: space-between;
+      }
+      #main .eld{
+        width:200px ;
+        position:absolute;
+        filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(184deg) brightness(108%) contrast(101%);
+      }
+      .dark-mode .eld{
+        filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(350deg) brightness(96%) contrast(103%);
+      }
+      #main #eld2 img{
+          width: 130px;
+          margin-left:650% ;
+      }
+
+      #main #eld img{
+          width: 130px;
+          margin-left:130px ;
+          margin-right: 150px;
+      }
+
+      .dark-mode button{
+        background-color: rgb(115, 115, 115);
+      }
+      .dark-mode button:hover{
+        background-color:rgb(165, 165, 165) ;
+      }
+    </style>
+</head>
+<body>
+   <header id="header">
+        <div id="logo">
+            <a href="index.html"> <img id="icon" src="img/bxlogo.png" alt="boks"/></a>
+        </div>
+
+        <div id="menu">
+          <ul>
+            <li><a id="men" href="index.html">Ana sayfa</a></li>                    
+            <li><a id="men" href="#efsaneler">Efsaneler</a>
+            <ul id="altmenu">
+                <li><a id="men" href="mali.html">Muhammed Ali</a></li>
+                <li><a id="men" href="mtyson.html">Mike Tyson</a></li> 
+                <li><a id="men" href="gforeman.html">George Foreman</a></li>                    
+            </ul> 
+            </li>                       
+            <li><a id="men" href="egitimler.html">Eğitimler</a></li>
+            <li><a id="men" href="oyun.html">Soru - Cevap</a></li>                                         
+            <li><a id="men" href="iletisim.html">İletişim</a></li>
+        </ul>                               
+        </div>
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="myFunction()">
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+   </header>
+
+   <main id="main" id="main_iletisim"> 
+            <div id="eld" class="eld">
+              <img src="img/pngwing.com (6).png" alt="resme alternatif yazı">
+            </div>
+            <div class="form-container" id="form">
+                <h2 id="hi2">İletişim Formu</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                    <label for="name">İsim:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="name-error"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="surname">Soyisim:</label>
+                    <input type="text" id="surname" name="surname" required>
+                    <div class="error-message" id="surname-error"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="age">Yaş:</label>
+                    <input type="text" id="age" name="age" required>
+                    <div class="error-message" id="age-error"></div>
+                  </div>
+                  <div class="form-group" id="cins">
+                    <label for="gender">Cinsiyet:</label>
+                    <select id="gender" name="gender" required>
+                      <option value="">Seçiniz</option>
+                      <option value="male">Erkek</option>
+                      <option value="female">Kadın</option>
+                      <option value="other">Diğer</option>
+                    </select>
+                    <div class="error-message" id="gender-error"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Açıklama:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <div class="error-message" id="message-error"></div>
+                    </div>
+                    <div class="form-group" id="button">
+                      <button class="button" type="submit" value="Gönder">Gönder</button>
+                    </div>
+                </form>                 
+            </div>
+            <div id="eld2" class="eld">
+              <img src="img/pngwing.com (6).png" alt="resme alternatif yazı">
+            </div>
+   </main>
+
+   <footer id="footer">
+        <div id="sosyal">
+            <a href="https://www.instagram.com/" target="_blank"><img id="i" src="img/i.png" alt="instagram"/></a>
+            <a href="https://tr-tr.facebook.com/" target="_blank"><img id="f" src="img/f.png" alt="facebook"/></a>
+            <a href="https://web.whatsapp.com" target="_blank"><img id="w" src="img/w.png" alt="whatsapp"/></a>
+        </div>
+   </footer>
+
+<script>
+// Formu gönderme işlemi
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Formun varsayılan davranışını engelle
+  
+  // Giriş verilerini al
+  var name = document.getElementById("name").value;
+  var surname = document.getElementById("surname").value;
+  var age = document.getElementById("age").value;
+  var gender = document.getElementById("gender").value;
+  var message = document.getElementById("message").value;
+
+  // İsimde rakam olmadığını kontrol et
+  if (hasNumbers(name)) {
+    document.getElementById("name-error").textContent = "İsimde rakam bulunamaz.";
+    return;
+  }
+  
+  // Soyisimde rakam olmadığını kontrol et
+  if (hasNumbers(surname)) {
+    document.getElementById("surname-error").textContent = "Soyisimde rakam bulunamaz.";
+    return;
+  }
+
+  // Yaşın sayı olup olmadığını kontrol et
+  if (!isNumeric(age)) {
+    document.getElementById("age-error").textContent = "Lütfen geçerli bir yaş girin.";
+    return;
+  }
+
+  // Yaşın negatif olmadığını kontrol et
+  if (parseInt(age) < 0) {
+    document.getElementById("age-error").textContent = "Yaş negatif olamaz.";
+    return;
+  }
+
+  // Formu gönder
+  // ...
+
+  // Hata mesajlarını temizle
+  document.getElementById("name-error").textContent = "";
+  document.getElementById("surname-error").textContent = "";
+  document.getElementById("age-error").textContent = "";
+  document.getElementById("gender-error").textContent = "";
+  document.getElementById("message-error").textContent = "";
+});
+
+// Sayısal kontrol fonksiyonu
+function isNumeric(value) {
+  return /^\d+$/.test(value);
+}
+
+// Rakam kontrol fonksiyonu
+function hasNumbers(value) {
+  return /\d/.test(value);
+}
+
+
+
+//BOKS ELDİVENİ ANİMASYONU
+$(document).ready(function() {
+  function animateToLeft() {
+    $('#eld').animate({marginLeft: '-20px'}, 1000, 'swing', animateToRight);
+  }
+  
+  function animateToRight() {
+    $('#eld').animate({marginLeft: '0px'}, 1000, 'swing', animateToLeft);
+  }
+  
+  animateToLeft();
+});
+
+$(document).ready(function() {
+  function animateToLeft() {
+    $('#eld2').animate({marginLeft: '+20px'}, 1000, 'swing', animateToRight);
+  }
+  
+  function animateToRight() {
+    $('#eld2').animate({marginLeft: '0px'}, 1000, 'swing', animateToLeft);
+  }
+  
+  animateToLeft();
+});
+
+
+</script>
+
+</body>
+</html>

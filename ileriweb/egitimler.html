@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark_mode.css">
+    <script src="js/darkmode.js"></script>
+    <link rel="icon" href="img/bxlogo.png" type="image/x-icon"/>
+    <meta name="keywords" content="Efsanelerin Hayatı, Boks, Boksör, Efsane  Boksörler, Muhammed Ali, Mike Tyson, George Foreman, Larry Holmes, Joe Fraizer">
+    <meta name="description" content="Efsanelerin hayatı resmi Web Sitesi">
+    <title>Efsanelerin Hayatı</title>
+    <style>
+        video {
+        width: 100%;
+        max-width: 500px;
+        display: block;
+        border: 2px solid #414141;
+        box-shadow: 0 0 5px rgb(26, 26, 2);
+        border-radius: 10px;
+        }
+        #main{
+            height: auto;
+        }
+        .dark-mode #main{
+            height: auto;
+        }
+        .egitimler{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom:55px;
+            border: 5px solid rgb(26, 26, 26);
+            padding: 20px;
+            border-radius: 15px;
+            width: 90%;
+            margin-left:3%;
+        }
+        #gard_div{
+            margin-top:50px;
+        }
+        h2{
+            color:white;
+        }
+        #text{
+            margin-left:30px;
+            margin-top:10px;
+            background-image:url('img/pngwing.com\ \(14\).png');
+            background-size: 80px;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: bottom;     
+        }
+        #aprkt{
+          margin-bottom:150px;
+        }
+        .dark-mode #main{
+            border-color:rgb(228, 225, 225);
+        }
+    </style>
+</head>
+<body>
+   <header id="header">
+        <div id="logo">
+            <a href="index.html"> <img id="icon" src="img/bxlogo.png" alt="boks"/></a>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a id="men" href="index.html">Ana sayfa</a></li>                    
+                <li><a id="men" href="#efsaneler">Efsaneler</a>
+                <ul id="altmenu">
+                    <li><a id="men" href="mali.html">Muhammed Ali</a></li>
+                    <li><a id="men" href="mtyson.html">Mike Tyson</a></li> 
+                    <li><a id="men" href="gforeman.html">George Foreman</a></li>                    
+                </ul> 
+                </li>                       
+                <li><a id="men" href="egitimler.html">Eğitimler</a></li>
+                <li><a id="men" href="oyun.html">Soru - Cevap</a></li>                                                  
+                <li><a id="men" href="iletisim.html">İletişim</a></li>
+            </ul>                                
+        </div>
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="myFunction()">
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+   </header>
+
+   <main id="main">
+    <div class="egitimler" id="gard_div">
+        <video controls id="gard-video">
+            <source src="video/gard.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <div id="text">
+            <h2>Gard Nasıl Alınır ?</h2>
+            <br>
+            <p>Boks maçında gard almak, boksörün kendisini korumak için kullandığı pozisyondur. Temel olarak, ellerini yüzünün önünde tutar ve gözlerini rakibine odaklar. Gard pozisyonunda olmak, rakibin saldırılarını engellemeye ve hızlı tepkiler vermeye yardımcı olur. Boks maçının farklı aşamalarında gard pozisyonu değişebilir ve doğru kullanımı için düzenli antrenman gereklidir.Unutmayın, boks maçında gard almak sadece savunma için değil, aynı zamanda hızlı ve etkili saldırılar yapmak için de önemlidir. Düzenli antrenman ve deneyim, gardı doğru bir şekilde kullanmanıza yardımcı olacaktır.</p>
+        </div>
+    </div>
+    <div class="egitimler">
+        <video controls id="ayak-video">
+            <source src="video/ayak.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <div id="text">
+            <h2>Boksta Ayak Hareketleri</h2>
+            <br>
+            <p>Boks maçında ayak hareketleri, boksörün saldırı ve savunma yeteneklerini önemli ölçüde etkileyen bir faktördür. Doğru ayak pozisyonu ve hareketleri, boksörün denge, hız ve manevra kabiliyetini artırır. Boksörler, maç boyunca ayaklarını hızlı ve kontrollü bir şekilde kullanarak rakiplerinden uzak durabilir, saldırılarını daha etkili bir şekilde gerçekleştirebilir ve rakibin saldırılarından kaçınabilirler. Ayaklarının doğru pozisyonda olması, boksörün güçlü bir temel oluşturmasına yardımcı olur ve darbeleri daha iyi absorbe etmesine olanak tanır. Antrenmanlar sırasında ayak hareketlerine özen göstermek, boksörün maç sırasında daha fazla kontrol ve hareket özgürlüğü elde etmesine yardımcı olur.</p>
+        </div>
+    </div>
+    <div class="egitimler">
+        <video controls id="dik-video">
+            <source src="video/dik.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <div id="text">
+            <h2>Sol - Sağ Dik Nasıl Atılır?</h2>
+            <br>
+            <p>Boks maçında sol ve sağ direkt atmak, boksörlerin temel saldırı tekniklerinden biridir ve büyük öneme sahiptir. Sol direkt, boksörün sol elini kullanarak rakibe doğru düz bir yumruk atması anlamına gelir. Sağ direkt ise sağ eli kullanarak benzer bir şekilde rakibe düz bir yumruk göndermeyi ifade eder. Bu direkt vuruşlar, hızlı ve etkili bir şekilde rakibi hedef alarak skor elde etmeyi amaçlar. Sol direkt genellikle jab olarak adlandırılır ve hızlı bir şekilde tekrarlanabilirken, sağ direkt daha güçlü bir darbe olarak bilinir. Sol ve sağ direktlerin doğru bir şekilde kullanılması, doğru zamanlama, mesafe kontrolü ve rakibin gardını aşmayı gerektirir. Bu teknikler, boksörün saldırı gücünü artırırken aynı zamanda rakibin savunmasını aşma ve kontrollü bir şekilde saldırma becerisini geliştirir. Sürekli pratik yaparak sol ve sağ direktlerin doğru tekniklerini öğrenmek ve hızlı refleksler geliştirmek, boksörün maçlarda başarılı olmasına yardımcı olur.</p>
+        </div>
+    </div>
+    <div class="egitimler">
+        <video controls id="krose-video">
+            <source src="video/krose.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <div id="text">
+            <h2>Kroşe Nasıl Atılır ?</h2>
+            <br>
+            <p>Boks maçında kroşe atmak, boksörün güçlü yanını kullanarak rakibe yandan yuvarlak bir yumruk atması anlamına gelir. Sol kroşe, boksörün sol elini kullanarak rakibe yandan bir yumruk gönderirken, sağ kroşe sağ elin kullanılmasıyla gerçekleştirilir. Kroşeler genellikle kuvvetli darbelerdir ve rakibin koruma duvarını aşarak etkili bir şekilde hedefe ulaşabilirler. Bu teknik, boksörün vücut mekaniğini ve dönüş hareketlerini kullanarak büyük bir kuvvet üretmesini gerektirir. Kroşe atarken, boksörün kalçalarını, omuzlarını ve üst bedenini dönerek güçlü bir rotasyon oluşturması önemlidir. Aynı zamanda, doğru mesafe kontrolü ve zamanlama da kritik öneme sahiptir. Kroşeler, rakibin gardını aşarak etkili bir şekilde saldırı yapma, onu etkisiz hale getirme veya sayı elde etme amacıyla kullanılır. Bu tekniklerin doğru bir şekilde uygulanması, boksörün güçlü ve etkili bir saldırı yeteneği geliştirmesine yardımcı olur. Düzenli pratik ve teknik çalışmalarla kroşe atma becerisini geliştirmek, boksörün maçlarda üstünlük sağlamasına katkıda bulunur.</p>
+        </div>
+    </div>
+    <div class="egitimler" id="aprkt">
+        <video controls id="aprkt-video">
+            <source src="video/aprkt.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <div id="text">
+            <h2>Aparkat Nasıl Atılır ?</h2>
+            <br>
+            <p>Boks maçında aparkat atmak, boksörün aşağıdan yukarıya doğru bir yumruk atmasıyla gerçekleşen bir tekniktir. Aparkat genellikle rakibin başına veya üst vücut bölgesine hedef alınır. Bu teknik, boksörün gücünü ve ağırlığını kullanarak etkili bir darbe oluşturmasını sağlar. Aparkat atarken, boksörün kollarını aşağıdan yukarıya hızlı ve patlayıcı bir şekilde indirerek güçlü bir darbe üretmesi önemlidir. Aynı zamanda, doğru mesafe kontrolü, zamanlama ve rakibin hareketlerini takip etme becerisi de aparkatın etkili bir şekilde kullanılmasını sağlar. Aparkatlar, rakibin gardını aşarak ciddi bir darbe indirme veya onu etkisiz hale getirme amacıyla kullanılır. Bu teknikleri doğru bir şekilde uygulamak, boksörün saldırı gücünü artırırken aynı zamanda rakibin saldırılarını da engelleme yeteneğini geliştirir. Düzenli antrenman ve teknik çalışmalarla aparkat atma becerisini geliştirmek, boksörün maçlarda üstünlük sağlamasına yardımcı olur.</p>
+        </div>
+    </div>
+   </main>
+
+   <footer id="footer">
+        <div id="sosyal">
+            <a href="https://www.instagram.com/" target="_blank"><img id="i" src="img/i.png" alt="instagram"/></a>
+            <a href="https://tr-tr.facebook.com/" target="_blank"><img id="f" src="img/f.png" alt="facebook"/></a>
+            <a href="https://web.whatsapp.com" target="_blank"><img id="w" src="img/w.png" alt="whatsapp"/></a>
+        </div>
+   </footer>
+
+   <script>
+        var video = document.querySelector('video');
+        // Videoyu otomatik olarak oynat
+        video.pause();
+
+        // Belirli bir olayla videoyu durdur
+        document.getElementById('durdurBtn').addEventListener('click', function() {
+        video.pause();
+        });
+
+        // Belirli bir olayla videoyu ilerlet
+        document.getElementById('ilerleBtn').addEventListener('click', function() {
+        video.currentTime += 10; // 10 saniye ileri
+        });
+    </script>
+
+</body>
+</html>

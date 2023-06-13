@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Efsanelerin Hayatı, Boks, Boksör, Efsane  Boksörler, Muhammed Ali, Mike Tyson, George Foreman, Larry Holmes, Joe Fraizer">
+    <meta name="description" content="Efsanelerin hayatı resmi Web Sitesi">
+    <link rel="icon" href="img/bxlogo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/dark_mode.css">
+    <script src="js/darkmode.js"></script>
+    <title>Efsanelerin Hayatı</title>
+    
+    <style>
+        #main{
+            background-image: url('img/boks.jpg');
+            background-size:100%;
+            background-position: center;
+            height: 646px;
+            background-repeat: no-repeat;
+            border-color:black;
+        }
+        main::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(98, 98, 98, 0.406), rgba(25, 25, 25, 0));
+            transform: translateX(100%);
+            animation: slide-animation 6s linear infinite;
+        }
+
+        @keyframes slide-animation {
+        0% {
+            transform: translateX(100%);
+        }
+        50% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+        }
+
+        
+        #george{
+            margin-bottom:200px;
+        }
+
+        .dark-mode{
+            #i{
+            width: 50px;
+        }
+        #f{
+            width: 49px;
+        }
+        #w{
+            width: 51px;
+        }
+        }
+
+        #i{
+            width: 50px;
+        }
+        #f{
+            width: 49px;
+        }
+        #w{
+            width: 51px;
+        }
+
+        #altmenu{
+            margin-left:-39px;
+            margin-top:5px;
+        }
+
+        #menu ul li ul {
+            height: 80px;
+        }
+       
+        header #menu a:hover{
+            border-bottom:none;
+        }              
+    </style>
+</head>
+<body>
+   <header id="header">
+        <div id="logo">
+            <a href="index.html"> <img id="icon" src="img/bxlogo.png" alt="boks"/></a>
+        </div>
+
+        <div id="menu">
+            <ul>
+                <li><a id="men" href="index.html">Ana sayfa</a></li>                    
+                <li><a id="men" href="#efsaneler">Efsaneler</a>
+                <ul id="altmenu">
+                    <li><a id="men" href="mali.html">Muhammed Ali</a></li>
+                    <li><a id="men" href="mtyson.html">Mike Tyson</a></li> 
+                    <li><a id="men" href="gforeman.html">George Foreman</a></li>                    
+                </ul> 
+                </li>                       
+                <li><a id="men" href="egitimler.html">Eğitimler</a></li>
+                <li><a id="men" href="oyun.html">Soru - Cevap</a></li>                                         
+                <li><a id="men" href="iletisim.html">İletişim</a></li>
+            </ul>                      
+        </div>
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked onclick="myFunction()">
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+   </header>
+
+   <main id="main">
+        <div id="text">
+            <h1>Efasanelerin Hayatları</h1>
+            <h3>Yetenek sporcuyu şöhret yapar , karakter ise efsane.</h3>
+            <h3>Yorulduğunda dinlenmeyi öğren , bırakmayı değil.</h3>
+            <h3>Hiçbir başarı tesadüf değildir.</h3>
+            <h5>Efsane boksörlerin hayatı...</h5>         
+        </div>    
+        <div id="ok-container" >
+            <img src="img/ok.png" alt="Ok Resmi" id="ok">
+        </div>
+   </main>
+   <div id="main2">
+            <div class="image-container">
+                <a id="box" href="mali.html"><img src="img/mali.png" alt="Resim Açıklaması" class="resim" ></a>
+                <div class="aciklama">
+                    <p id="p_ozet">61 Mach – 56 Win (37 Nakavt), 5 Lose</p>
+                    <br>
+                    <p>Muhammed Ali (doğum adıyla Cassius Marcellus Clay Jr.; d. 17 Ocak 1942, Louisville, Kentucky – ö. 3 Haziran 2016, Phoenix, Arizona), Amerikalı profesyonel boksördür. Tüm zamanların en iyi boksörü olarak kabul edilen Muhammed Ali, 20. yüzyılın en önemli spor figürlerinden biridir.</p>
+                    <br>
+                    <p id="p_gizli">Daha fazlası için resme tıklayın..</p>
+                </div>
+            </div>
+    </div>
+   <div id="main3" >
+        <div class="image-container" id="d">
+            <a id="box" href="mtyson.html"><img src="img/mtyson.png" alt="Resim Açıklaması" class="resim" id="mtyson"></a>
+            <div class="aciklama" id="mtysonac">
+                <p id="p_ozet">58 Mach – 50 Win (44 Nakavt), 6 Lose</p>
+                <br>
+                <p>Michael Gerard Tyson (popüler ismiyle Mike Tyson, 30 Haziran 1966), 1985-2005 yılları arasında kariyer yapmış eski bir Amerikalı profesyonel boksör. 1987'den 1990'a kadar, dünyanın tek ağır sıklet şampiyonu olarak hüküm sürdü; WBA, WBC ve IBF ödüllerini aynı anda alan ve bunları art arda birleştiren tek boksör oldu.</p>
+                <br>
+                <p id="p_gizli">Daha fazlası için resme tıklayın..</p>
+            </div>
+        </div>
+    </div>
+<div id="main4">
+        <div class="image-container" id="george">
+            <a id="box" href="gforeman.html"><img src="img/gfor.png" alt="Resim Açıklaması" class="resim" id="gfor"></a>
+            <div class="aciklama">
+                <p id="p_ozet">81 Maç – 76 Win (68 Nakavt), 5 Lose</p>
+                <br>
+                <p>George Edward Foreman (d. 10 Ocak 1949, Teksas), Amerikalı eski Dünya Ağır Siklet Boks Şampiyonu ve Olimpiyat altın madalyalı boksör. 1994'te 45 yaşında, Michael Moorer'ı nakavt ederek "en yaşlı ağır sıklet boks şampiyonu oldu. Ring dergisi tarafından tüm zamanların en büyük 25 dövüşçüsünden biri seçildi.</p>
+                <br>
+                <p id="p_gizli">Daha fazlası için resme tıklayın..</p>
+            </div>
+        </div>
+    </div>
+   <footer id="footer">
+        <div id="sosyal">
+            <a href="https://www.instagram.com/" target="_blank"><img id="i" src="img/i.png" alt="instagram"/></a>
+            <a href="https://tr-tr.facebook.com/" target="_blank"><img id="f" src="img/f.png" alt="facebook"/></a>
+            <a href="https://web.whatsapp.com" target="_blank"><img id="w" src="img/w.png" alt="whatsapp"/></a>
+        </div>
+        <div>
+            <p id="p_telif">Bu sitenin hakları Aşık Üveys UZUNSAKAL'a Aittir</p>
+        </div>
+   </footer>
+
+   <script>
+    //OK ANİMASYONU
+    $(document).ready(function() {
+        var okImg = $('#ok');
+        var initialTop = parseInt(okImg.css('top'));
+
+        function animateOk() {
+            // Dikey konumu 100 piksel hareket ettirerek animasyonu gerçekleştirie
+            okImg.animate({
+                top: initialTop + 80
+            }, 2000, function() {
+                // Animasyon tamamlandığında konumu sıfırlayın ve tekrar animasyonu başlatıe
+                okImg.css('top', initialTop);
+                animateOk();
+            });
+        }
+
+        // İlk animasyonu başlatır
+        animateOk();
+    });
+
+</script>
+
+
+</body>
+</html>
